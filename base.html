@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>staybooker original html</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navbar-left">
+			<a href="index.html" class="logo"><h3>SB</h3></a>
+			<div class="search-box">
+				<img src="images/search.png">
+				<input type="text" placeholder="search location">
+			</div>
+
+		</div>
+		<div class="navbar-center">
+			<ul>
+				<li><a href="#" class="active-link"><i class='bx bx-bed' ></i><span>Stays</span></a></li>
+				<li><a href="#"><i class='bx bx-restaurant'></i><span>Eat</span></a></li>
+				<li><a href="#"><i class='bx bx-car'></i><span>Car Rental</span></a></li>
+				<li><a href="#"><i class='bx bx-hotel'></i><span>Hotel</span></a></li>
+				<li><a href="#"><i class='bx bxl-netlify'></i><span>Attractions</span></a></li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+			<img src="images/profile.png" class="nav-profile-img" onclick="toggleMenu()">
+		</div>
+		<!------ profile dropdown ------>
+	<div class="profile-menu-wrap" id="profileMenu">
+		<div class="profile-menu">
+			<div class="user-info">
+				<img src="images/profile.png">
+				<div>
+					<h3>Ryan walton</h3>
+					<a href="#">see your profile</a>
+				</div>
+			</div>
+			<hr>
+			<a href="#" class="profile-menu-link">
+				<i class='bx bxs-log-in-circle' ></i>
+				<p>Log in</p>
+				<span></span>
+			</a>
+			<a href="#" class="profile-menu-link">
+				<i class='bx bx-shape-square'></i>
+				<p>Give Feedback</p>
+				<span></span>
+			</a>
+			<a href="#" class="profile-menu-link">
+				<i class='bx bx-cog' ></i>
+				<p>Settings & Privacy</p>
+				<span></span>
+			</a>
+			<a href="#" class="profile-menu-link">
+				<i class='bx bxs-help-circle'></i>
+				<p>Help & Support</p>
+				<span></span>
+			</a>
+			<a href="#" class="profile-menu-link">
+				<i class='bx bx-desktop' ></i>
+				<p>Display & Accessibility</p>
+				<span></span>
+			</a>
+			<a href="#" class="profile-menu-link">
+				<i class='bx bx-log-out-circle'></i>
+				<p>Logout</p>
+				<span></span>
+			</a>
+		</div>
+	</div>	
+	</nav>
+	<!--------- NAvbar Close ------->
+<!----------home-------->
+<section class="home" id=""home>
+	<div class="content">
+		<span data-aos="fade-up" data-aos-delay="150">Let's start</span>
+		<h3 data-aos="fade-up" data-aos-delay="300">World Tour with us</h3>
+		<p data-aos="fade-up" data-aos-delay="450">Lorem ipsum</p>
+		<a data-aos="fade-up" data-aos-delay="600" href="#" class="btn">Book Now</a>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<script>
+	
+	let profileMenu = document.getElementById('profileMenu');
+
+	function toggleMenu(){
+		profileMenu.classList.toggle("open-menu")
+	}
+
+	AOS.init({
+		duration: 800,
+		offset: 150,
+	});
+
+</script>
+
+
+
+
+
+	
+</body>
+</html>
